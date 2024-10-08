@@ -1,6 +1,3 @@
-Breve descripción del contenido del repositorio:
-
-
 El repositorio contiene dos ficheros creados para el trabajo01 de Teoría de la Decisión:
 
 
