@@ -25,6 +25,9 @@ criterio.Savage(X1) #Alternativa 5
 criterio.Laplace(X1) #Alternativa 5
 criterio.PuntoIdeal(X1) #Alternativa 5
 
+# Las alternativas elegidas según distintos criterios son las alternativas 3 y 5
+# La alternativa 5 es elegida según más criterios que la 3, por lo que sería la alternativa tomada.
+
 #Situación desfavorable
 criterio.Wald(X1,favorable = FALSE) #Alternativa 2
 criterio.Optimista(X1,favorable = FALSE) #Alternativa 1
@@ -38,6 +41,8 @@ criterio.Savage(X1,favorable = FALSE) #Alternativa 2
 criterio.Laplace(X1,favorable = FALSE) #Alternativa 2
 criterio.PuntoIdeal(X1,favorable = FALSE) #Alternativa 2
 
+# Las alternativas elegidas según distintos criterios son las alternativas 1 y 2
+# La alternativa 2 es elegida según más criterios que la 1, por lo que sería la alternativa tomada.
 
 
 #PROBLEMA 2: José Ignacio está decidiendo con qué empresa firmar su primer contrato.
@@ -67,7 +72,7 @@ X2
 
 criterio.Todos(X2,favorable = T)
 
-#                               Wald          Optimista           au  Hurwicz             Savage            Laplace        Punto Ideal
+#                               Wald          Optimista             Hurwicz             Savage            Laplace        Punto Ideal
 #pequeña consultora            61200              67200               63000                  0              62700                  0
 #Deloitte                      48600              54600               50400              12600              52350              21289
 #EY                            42300              48300               44100              18900              46800              32361
@@ -75,3 +80,5 @@ criterio.Todos(X2,favorable = T)
 #PWC                           49500              52500               50400              14700              50250              25035
 #iAlt.Opt (fav.)  pequeña consultora pequeña consultora  pequeña consultora pequeña consultora pequeña consultora pequeña consultora
 
+# Según todos los criterios, José Ignacio debería elegir la pequeña consultora, por
+# lo que no hay duda de que esa debe ser la alternativa tomada
