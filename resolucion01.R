@@ -8,6 +8,10 @@ source("~/Fran/Curso 24-25/1 TD/trabajo01/teoriadecision_funciones_incertidumbre
 X1=crea.tablaX(c(6,9,4,6,5,5,6,5,6,6,6,8,6,8,6,6,5,8,9,15),numalternativas = 5,numestados = 4)
 X1
 
+
+#Resolverla tanto para situación favorable como desfavorable, con cada uno de los 
+#criterios por separado.
+
 #Situación favorable
 criterio.Wald(X1) #Alternativa 3
 criterio.Optimista(X1) #Alternativa 5
@@ -35,8 +39,6 @@ criterio.Laplace(X1,favorable = FALSE) #Alternativa 2
 criterio.PuntoIdeal(X1,favorable = FALSE) #Alternativa 2
 
 
-#Resolverla tanto para situación favorable como desfavorable, con cada uno de los 
-#criterios por separado.
 
 #PROBLEMA 2: José Ignacio está decidiendo con qué empresa firmar su primer contrato.
 #Deloitte le paga 1300€ al mes y si se queda dos años, le costean un máster que
